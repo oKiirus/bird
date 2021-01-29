@@ -118,7 +118,7 @@ function keyPressed(){
 
 async function getTime(){
 
-var time = await fetch("http://worldtimeapi.org/api/timezone/America/Vancouver")
+var time = await fetch("https://worldtimeapi.org/api/timezone/America/Vancouver")
 var Language = await time.json()
 var slamp = Language.datetime
 var clamp = slamp.slice(11,13)
